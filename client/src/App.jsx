@@ -19,7 +19,7 @@ function Footer() {
 }
 
 function Layout() {
-  return <><Header /><main><Outlet /></main><Footer /></>;
+  return <><a className="skip-link" href="#main-content">Skip to main content</a><Header /><main id="main-content" tabIndex="-1"><Outlet /></main><Footer /></>;
 }
 
 function PageIntro({ number, label, title }) {
@@ -56,7 +56,7 @@ function Contact() {
     setTimeout(() => navigate("/"), 1200);
   }
 
-  return <section className="section contact-section page-section"><div className="section-intro"><PageIntro number="05" label="Contact me" title="Let's start a conversation." /><p>Email: <a href="mailto:bsenfuma@my.centennialcollege.ca">bsenfuma@my.centennialcollege.ca</a><br />Phone: <a href="tel:+14373282640">437 328 2640</a></p></div><form className="contact-form" onSubmit={handleSubmit}><div className="form-row"><label>First name<input name="firstName" required /></label><label>Last name<input name="lastName" required /></label></div><div className="form-row"><label>Email address<input type="email" name="email" required /></label><label>Contact number<input type="tel" name="phone" /></label></div><label>Message<textarea name="message" rows="5" required /></label><button className="primary-button" type="submit">Send message <span>↗</span></button>{submitted && <p className="form-success" role="status">Thanks. Your message has been captured.</p>}</form></section>;
+  return <section className="section contact-section page-section"><div className="section-intro"><PageIntro number="05" label="Contact me" title="Let's start a conversation." /><p>Email: <a href="mailto:bsenfuma@my.centennialcollege.ca">bsenfuma@my.centennialcollege.ca</a><br />Phone: <a href="tel:+14373282640">437 328 2640</a></p></div><form className="contact-form" onSubmit={handleSubmit}><div className="form-row"><label>First name<input name="firstName" autoComplete="given-name" required /></label><label>Last name<input name="lastName" autoComplete="family-name" required /></label></div><div className="form-row"><label>Email address<input type="email" name="email" autoComplete="email" required /></label><label>Contact number<input type="tel" name="phone" autoComplete="tel" /></label></div><label>Message<textarea name="message" rows="5" required /></label><button className="primary-button" type="submit">Send message <span>↗</span></button>{submitted && <p className="form-success" role="status">Thanks. Your message has been captured.</p>}</form></section>;
   }
 
 export { Layout, Home, About, Projects, Education, Services, Contact };
