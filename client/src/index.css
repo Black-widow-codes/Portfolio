@@ -1,0 +1,6 @@
+:root { --ink: #20211d; --muted: #74756d; --paper: #f3f1e9; --cream: #e8e5d9; --line: rgba(32, 33, 29, 0.16); --lime: #c7eb69; --orange: #e47b4a; --serif: Georgia, 'Times New Roman', serif; --sans: 'Trebuchet MS', 'Segoe UI', sans-serif; --mono: 'Courier New', monospace; font-family: var(--sans); color: var(--ink); background: var(--paper); font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; }
+#root { min-height: 100vh; }
