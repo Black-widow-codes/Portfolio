@@ -40,7 +40,7 @@ em { color: var(--orange); font-style: italic; }
 .section-heading { margin-bottom: 42px; }.section-heading h2 { margin: 0; font-family: var(--serif); font-size: clamp(38px, 5vw, 60px); font-weight: 400; line-height: .95; letter-spacing: -0.05em; }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .project-card { padding: 16px; border: 1px solid var(--line); background: rgba(255,255,255,.2); }
-.project-image { display: grid; place-items: center; aspect-ratio: 1.35; margin-bottom: 20px; background: var(--ink); color: var(--lime); font-family: var(--mono); font-size: 11px; text-transform: uppercase; }
+.project-image { display: block; width: 100%; aspect-ratio: 1.35; object-fit: cover; object-position: center; margin-bottom: 20px; background: var(--ink); color: var(--lime); font-family: var(--mono); font-size: 11px; text-transform: uppercase; }
 .project-image-2 { background: var(--orange); color: var(--ink); }.project-image-3 { background: var(--lime); color: var(--ink); }
 .project-card h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 28px; font-weight: 400; }.project-card > p:not(.eyebrow) { color: var(--muted); font-size: 13px; line-height: 1.55; }.project-outcome { padding-top: 12px; border-top: 1px solid var(--line); }.project-outcome strong { color: var(--ink); }
 .project-link { display: inline-flex; gap: 10px; margin-top: 5px; color: var(--ink); font-family: var(--mono); font-size: 10px; text-transform: uppercase; }
