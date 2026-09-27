@@ -27,7 +27,7 @@ function PageIntro({ number, label, title }) {
 }
 
 function Home() {
-  return <section className="hero"><div><h1>Secure systems. Human design. <em>Digital empowerment.</em></h1><p className="hero-text">I am Bryan Senfuma, a Digital Health Engineering Technology student, IT support practitioner, and Digital Citizen Corner writer focused on making technology safer and easier to understand.</p><Link className="primary-button" to="/about">Meet Bryan <span>↗</span></Link></div><div className="hero-orbit" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit-core">BS</div><span className="orbit-label label-one">secure</span><span className="orbit-label label-two">explain</span><span className="orbit-label label-three">include</span></div></section>;
+  return <section className="hero"><div><h1>Secure systems. Human design. <em>Digital empowerment.</em></h1><p className="hero-text">I am Bryan Senfuma, a Digital Health Engineering Technology student and IT support practitioner focused on building secure, accessible, and human-centered technology that helps people confidently navigate the digital world.</p><Link className="primary-button" to="/about">Meet Bryan <span>↗</span></Link></div><div className="hero-orbit" aria-hidden="true"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="orbit-core">BS</div><span className="orbit-label label-one">secure</span><span className="orbit-label label-two">explain</span><span className="orbit-label label-three">include</span></div></section>;
 }
 
 function About() {
